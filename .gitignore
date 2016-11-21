@@ -1,0 +1,9 @@
+/CMakeCache.txt
+/cmake_install.cmake
+/config.h
+/k2pdfoptlib/libk2pdfoptlib.a
+/willuslib/libwilluslib.a
+/k2pdfopt
+CMakeFiles/
+Makefile
+cmake_install.cmake
