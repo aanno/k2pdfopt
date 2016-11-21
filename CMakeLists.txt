@@ -6,6 +6,8 @@ cmake_minimum_required(VERSION 2.6)
 include(FindPkgConfig)
 
 set(K2PDFOPT_LIB "-lm")
+# http://stackoverflow.com/questions/13703647/how-to-properly-add-include-directories-with-cmake
+include_directories(include_mod)
 
 # cmake -DCMAKE_BUILD_TYPE=Debug <path>
 
