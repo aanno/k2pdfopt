@@ -2638,7 +2638,11 @@ printf("@k2master_rows_color:  %d x %d\n",srcbmp->width,srcbmp->height);
     /* Parse region into columns */
     pageregions=&_pageregions;
     pageregions_init(pageregions);
+#ifdef HAVE_OCR_LIB
     if (k2settings->ocr_max_columns==2 || k2settings->max_columns>1)
+#else 
+    if (k2settings->max_columns>1)
+#endif
         maxlevels = 2;
     else
         maxlevels = 3;
